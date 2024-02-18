@@ -3,6 +3,7 @@ import { Noto_Serif_SC } from 'next/font/google'
 import { Noto_Sans_SC } from 'next/font/google'
 import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
+import '../globals.css'
 
 const noto_serif_sc = Noto_Serif_SC({ 
   weight: ['400', '500', '600', '700'],
