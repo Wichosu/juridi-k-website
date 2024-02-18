@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useTranslation } from '../../i18n'
+import { Footer } from '../components/Footer'
 
 interface Props {
   params: { lng: string}
@@ -13,6 +14,7 @@ export default async function Page({ params: { lng } }: Props) {
       <Link href={`/${lng}`}>
         {t('back-to-home')}
       </Link>
+      <Footer lng={lng} />
     </>
   )
 }

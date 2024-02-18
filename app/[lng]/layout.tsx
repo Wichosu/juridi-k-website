@@ -1,4 +1,3 @@
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
 import type { Metadata } from 'next'
 import { Noto_Serif_SC } from 'next/font/google'
 import { Noto_Sans_SC } from 'next/font/google'
@@ -33,9 +32,7 @@ export default function RootLayout({
   return (
     <html lang={lng} dir={dir(lng)}>
       <body className={noto_serif_sc.className}>
-        <AppRouterCacheProvider>
           {children}
-        </AppRouterCacheProvider>
       </body>
     </html>
   )
