@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useTranslation } from '../i18n'
 import { Footer } from './components/Footer'
-import { Navbar } from './components/Navbar/Navbar'
+import { Navbar } from './components/Navbar'
 
 interface Props {
   params: { lng: string}
