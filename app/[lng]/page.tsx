@@ -1,15 +1,15 @@
 "use client"
 import Link from 'next/link'
-import { useTranslation } from '../i18n'
-import { Footer } from './components/Footer'
-import { Navbar } from './components/Navbar'
+import { useTranslation } from '../i18n/client'
+import { Footer } from './components/Footer/client'
+import { Navbar } from './components/Navbar/client'
 
 interface Props {
   params: { lng: string}
 }
 
-export default async function Page({ params: { lng } }: Props) {
-  const { t } = await useTranslation(lng)
+export default function Page({ params: { lng } }: Props) {
+  const { t } = useTranslation(lng)
 
   return (
     <>
