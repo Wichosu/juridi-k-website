@@ -6,8 +6,9 @@ interface Props {
 }
 
 export const Navbar = async ({ lng }: Props) => {
+  const { t } = await useTranslation(lng, "navbar")
 
   return (
-    <NavbarBase lng={lng} />
+    <NavbarBase t={t} lng={lng} />
   )
 }
