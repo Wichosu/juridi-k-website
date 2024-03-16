@@ -1,12 +1,11 @@
 import Link from "next/link"
-import { languages } from "@/app/i18n/settings"
-import { Trans } from "react-i18next"
 import Image from "next/image"
 import LogoBig from "../../../../public/juridi-k-logo.svg"
 import BurgerIcon from "../../../../public/list.svg"
 import ExpandIcon from "../../../../public/caret-down-fill.svg"
 import CloseIcon from "../../../../public/x-circle.svg"
 import { useState } from "react"
+import { LanguageSwitcher } from "./components/LanguageSwitcher/client"
 
 interface Props {
   lng: string
@@ -40,6 +39,7 @@ export const NavbarBase = ({ lng }: Props) => {
           <li>Amparos</li>
         </ul>
         <Link href={'/'} className="text-white">Nuestros Abogados</Link>
+        <LanguageSwitcher lng={lng} />
       </aside>
     </nav>
   )
