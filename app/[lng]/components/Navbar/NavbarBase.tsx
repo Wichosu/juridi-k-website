@@ -18,7 +18,7 @@ export const NavbarBase = ({ t, lng }: Props) => {
   const [showNavbar, setShowNavbar] = useState(false)
 
   return (
-    <nav className="flex justify-between px-8 py-4 bg-darkblue">
+    <nav className="flex justify-between px-8 py-4 bg-darkblue capitalize">
       <Image src={LogoBig} width={100} height={100} alt="juridi-k logo" className="cursor-pointer" />
       <Image src={BurgerIcon} width={40} height={40} alt="menu button" className="cursor-pointer" onClick={() => setShowNavbar((val) => !val)}  />
       <aside className={`fixed flex flex-col gap-4 top-0 right-0 w-3/4 h-screen px-8 pt-12 bg-darkblue transition ease-in-out ${showNavbar? 'translate-x-0' : 'translate-x-full'}`}>
