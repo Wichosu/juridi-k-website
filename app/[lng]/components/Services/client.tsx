@@ -1,4 +1,4 @@
-import { TFunction } from "i18next";
+"use client"
 import { ServicesBase } from "./ServicesBase";
 import { useTranslation } from "@/app/i18n/client";
 
