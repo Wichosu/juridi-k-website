@@ -7,6 +7,7 @@ import { Hero } from './components/Hero/client'
 import { AboutUs } from './components/AboutUs/client'
 import { Services } from './components/Services/client'
 import { Info } from './components/Info/client'
+import { ContactUs } from './components/ContactUs/client'
 
 interface Props {
   params: { lng: string}
@@ -22,6 +23,7 @@ export default function Page({ params: { lng } }: Props) {
       <AboutUs lng={lng} />
       <Services lng={lng} />
       <Info lng={lng} />
+      <ContactUs lng={lng} />
     </>
   )
 }
