@@ -30,7 +30,7 @@ const services = [
 export const ServicesBase = ({ t, lng }) => {
   return (
     <section className="bg-darkblue text-white px-8 py-4">
-      <h1 className="text-3xl py-4">¿Que Hacemos?</h1>
+      <h1 className="text-3xl py-4">{ t("title") }</h1>
       {
         services.map(desc => (
           <div className="uppercase my-3 px-4 py-2 text-xl hover:cursor-pointer bg-darkred">{t(desc)}</div>
