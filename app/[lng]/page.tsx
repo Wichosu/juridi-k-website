@@ -17,13 +17,14 @@ export default function Page({ params: { lng } }: Props) {
   const { t } = useTranslation(lng, "home-page")
 
   return (
-    <>
+    <main>
       <Navbar lng={lng} />
       <Hero lng={lng} />
       <AboutUs lng={lng} />
       <Services lng={lng} />
       <Info lng={lng} />
       <ContactUs lng={lng} />
-    </>
+      <Footer lng={lng} />
+    </main>
   )
 }
