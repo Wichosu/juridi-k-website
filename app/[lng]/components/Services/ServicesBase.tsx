@@ -34,7 +34,7 @@ export const ServicesBase = ({ t, lng }) => {
     <section className="bg-darkblue text-white">
       <div className="px-8 py-4 lg:max-w-screen-xl lg:mx-auto">
         <h1 className="text-3xl py-4">{ t("title") }</h1>
-        <div className="lg:grid lg:grid-cols-3">
+        <div className="lg:grid lg:grid-cols-3 lg:gap-2">
           {
             services.map(desc => (
               <div className="
