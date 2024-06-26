@@ -8,7 +8,7 @@ interface Props {
   lng: string
 }
 
-export const AboutUsBase = ({ t, lng }) => {
+export const AboutUsBase = ({ t, lng }: Props) => {
   return (
     <section className="
         px-8 py-4 grid gap-4 lg:max-w-screen-xl lg:mx-auto lg:flex lg:flex-row-reverse
