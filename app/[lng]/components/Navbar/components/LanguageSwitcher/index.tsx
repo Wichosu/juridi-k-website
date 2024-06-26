@@ -1,7 +1,11 @@
 import { useTranslation } from "@/app/i18n";
 import { LanguageSwitcherBase } from "./LanguageSwitcherBase";
 
-export const LanguageSwitcher = async ({ lng }) => {
+interface Props {
+  lng: string
+}
+
+export const LanguageSwitcher = async ({ lng }: Props) => {
   const { t } = await useTranslation(lng, "langs")
 
   return (

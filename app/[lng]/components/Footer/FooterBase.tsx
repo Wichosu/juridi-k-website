@@ -1,13 +1,19 @@
 import Link from 'next/link'
 import { Trans } from 'react-i18next/TransWithoutContext'
 import { languages } from '../../../i18n/settings'
+import { TFunction } from 'i18next'
 import Image from 'next/image'
 import Logo from '@/public/juridi-k-logo.svg'
 import Envelope from '@/public/envelope.svg'
 import Telephone from '@/public/telephone.svg'
 import Whatsapp from '@/public/whatsapp.svg'
 
-export const FooterBase = ({ t, lng }) => {
+interface Props {
+  t: TFunction<any, undefined>,
+  lng: string
+}
+
+export const FooterBase = ({ t, lng }: Props) => {
   return (
     <footer className='bg-darkblue text-white'>
       <div className='grid gap-4 px-8 py-4 lg:max-w-screen-xl lg:mx-auto'>

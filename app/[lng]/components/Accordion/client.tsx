@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const Accordion = ({ lng, locale, children, name }: Props) => {
-  const { t } = useTranslation(lng, locale)
+  const { t } = useTranslation(lng, locale, '')
 
   return (
     <AccordionBase t={t} lng={lng} name={name}>

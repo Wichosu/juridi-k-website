@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const ContactUs = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, "contact-us")
+  const { t } = useTranslation(lng, "contact-us", '')
 
   return (
     <ContactUsBase t={t} lng={lng} />
