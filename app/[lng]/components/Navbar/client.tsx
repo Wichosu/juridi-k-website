@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const Navbar = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, "navbar", '')
+  const { t } = useTranslation(lng, "navbar", undefined)
 
   return <NavbarBase t={t} lng={lng} />
 }

@@ -8,6 +8,6 @@ interface Props {
 }
 
 export const Footer = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, 'footer', '')
+  const { t } = useTranslation(lng, 'footer', undefined)
   return <FooterBase t={t} lng={lng} />
 }

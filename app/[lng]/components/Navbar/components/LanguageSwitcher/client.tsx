@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const LanguageSwitcher = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, "langs", '')
+  const { t } = useTranslation(lng, "langs", undefined)
 
   return (
     <LanguageSwitcherBase t={t} lng={lng} />

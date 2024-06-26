@@ -7,6 +7,7 @@ import { useCookies } from 'react-cookie'
 import resourcesToBackend from 'i18next-resources-to-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { getOptions, languages, cookieName } from './settings'
+import { UseTranslationOptions } from 'react-i18next'
 
 const runsOnServerSide = typeof window === 'undefined'
 
@@ -14,7 +15,7 @@ const runsOnServerSide = typeof window === 'undefined'
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
-  .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
+  .use(resourcesToBackend((language: string, namespace: string) => import(`./locales/${language}/${namespace}.json`)))
   .init({
     ...getOptions(),
     lng: undefined, // let detect the language on client side
@@ -24,7 +25,7 @@ i18next
     preload: runsOnServerSide ? languages : []
   })
 
-export function useTranslation(lng, ns, options) {
+export function useTranslation(lng: string, ns: string, options: UseTranslationOptions<undefined> | undefined ) {
   const [cookies, setCookie] = useCookies([cookieName])
   const ret = useTranslationOrg(ns, options)
   const { i18n } = ret

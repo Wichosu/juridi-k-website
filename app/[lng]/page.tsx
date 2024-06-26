@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function Page({ params: { lng } }: Props) {
-  const { t } = useTranslation(lng, "home-page", '')
+  const { t } = useTranslation(lng, "home-page", undefined)
 
   return (
     <main>

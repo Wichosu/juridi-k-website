@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Info = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, "info", '')
+  const { t } = useTranslation(lng, "info", undefined)
 
   return (
     <InfoBase t={t} lng={lng} />

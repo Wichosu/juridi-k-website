@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Hero = ({ lng }: Props) => {
-  const { t } = useTranslation(lng, "hero", '')
+  const { t } = useTranslation(lng, "hero", undefined)
 
   return (
     <HeroBase t={t} lng={lng} />
