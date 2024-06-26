@@ -23,14 +23,14 @@ export const AccordionBase = ({ t, lng, children, name }: Props) => {
   }
 
   return (
-    <>
-      <button className="text-3xl w-full mt-8 flex justify-between" onClick={triggerAccordion}>
+    <div>
+      <button className="text-3xl w-full flex justify-between" onClick={triggerAccordion}>
         { name }
         <Image src={Arrow} width={20} height={20} alt="" className={`${trigger ? 'rotate-180' : 'rotate-0'} transition-all`}></Image>
       </button>
       <article className={`${trigger ? `block` : 'hidden'} mt-4 transition-all`} ref={ articleRef }>
         { children }
       </article>
-    </>
+    </div>
   )
 }

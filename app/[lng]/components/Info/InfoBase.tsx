@@ -9,7 +9,7 @@ interface Props {
 export const InfoBase = ({ t, lng}: Props) => {
   return (
     <section>
-      <div className="px-8 my-4 lg:max-w-screen-md lg:mx-auto">
+      <div className="px-8 my-4 lg:grid lg:gap-12 lg:max-w-screen-md lg:mx-auto">
         <Accordion lng={lng} locale="info" name={ t("justification") }>
           JURIDI-K nace a partir de la idea de un grupo de abogados de amplia experiencia
 que son conscientes de la necesidad de prepararse académicamente para

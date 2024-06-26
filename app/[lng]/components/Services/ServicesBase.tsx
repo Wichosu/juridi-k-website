@@ -36,11 +36,12 @@ export const ServicesBase = ({ t, lng }: Props) => {
         <h1 className="text-3xl py-4">{ t("title") }</h1>
         <div className="lg:grid lg:grid-cols-3 lg:gap-2">
           {
-            services.map(desc => (
+            services.map((desc, key) => (
               <div className="
                   uppercase my-3 px-4 py-2 text-xl hover:cursor-pointer bg-darkred
                   lg:w-fit
                 "
+                key={key}
               >
                 {t(desc)}
               </div>
