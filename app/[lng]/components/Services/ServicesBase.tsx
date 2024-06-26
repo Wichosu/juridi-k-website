@@ -27,7 +27,7 @@ const services = [
   "insurance_and_insurers"
 ]
 
-export const ServicesBase = ({ t, lng }) => {
+export const ServicesBase = ({ t, lng }: Props) => {
   const servicesLength = services.length / 2
 
   return (
