@@ -16,13 +16,13 @@ interface Props {
 export const FooterBase = ({ t, lng }: Props) => {
   return (
     <footer className='bg-darkblue text-white'>
-      <div className='grid gap-4 px-8 py-4 lg:max-w-screen-xl lg:mx-auto'>
-        <div className='lg:flex lg:flex-row-reverse lg:justify-evenly lg:mb-4'>
-          <div className='lg:max-w-lg lg:grid lg:gap-8'>
+      <div className='grid gap-8 px-8 py-4 lg:max-w-screen-xl lg:mx-auto'>
+        <div className='grid gap-8 lg:flex lg:flex-row-reverse lg:justify-evenly lg:mb-4'>
+          <div className='grid gap-8 lg:max-w-lg'>
             <ul className='flex justify-between'>
-              <li className='cursor-pointer'><Image src={Envelope} width={40} height={40} alt='' /></li>
-              <li className='cursor-pointer'><Image src={Telephone} width={40} height={40} alt='' /></li>
-              <li className='cursor-pointer'><Image src={Whatsapp} width={40} height={40} alt='' /></li>
+              <li className='cursor-pointer scale-75'><Image src={Envelope} width={40} height={40} alt='' /></li>
+              <li className='cursor-pointer scale-75'><Image src={Telephone} width={40} height={40} alt='' /></li>
+              <li className='cursor-pointer scale-75'><Image src={Whatsapp} width={40} height={40} alt='' /></li>
             </ul>
             <p>JURIDI-K: Helsinki No. 2. Colonia Monte Magno, Xalapa-Veracruz, México. C.P. 91193.</p>
           </div>

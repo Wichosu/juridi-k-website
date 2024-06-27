@@ -10,7 +10,7 @@ export const ContactUsBase = ({ t, lng }: Props) => {
     <form className="bg-darkblue">
       <div className="grid gap-4 px-8 py-4 lg:max-w-screen-xl lg:mx-auto">
         <h1 className="text-white text-3xl lg:text-center">{ t("title") }</h1>
-        <div className="lg:flex lg:gap-4">
+        <div className="flex flex-col gap-4 lg:flex-row ">
           <input className="bg-neutral-300 px-4 py-2 w-full rounded-t-sm border-b-2 border-b-neutral-400" placeholder={ t("name") } />
           <input className="bg-neutral-300 px-4 py-2 w-full rounded-t-sm border-b-2 border-b-neutral-400" placeholder={ t("email") } />
           <input className="bg-neutral-300 px-4 py-2 w-full rounded-t-sm border-b-2 border-b-neutral-400" placeholder={ t("phone") } />

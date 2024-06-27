@@ -19,8 +19,8 @@ export const AboutUsBase = ({ t, lng }: Props) => {
         <h1 className="text-3xl py-4">{ t("title") }</h1>
         <p className="text-sm">{ t("description") }</p>
         <div className="
-            bg-darkred text-white flex justify-around py-4 my-4 cursor-pointer
-            lg:w-fit lg:px-8
+            bg-darkred text-white flex justify-around px-8 py-4 my-4 cursor-pointer
+            lg:w-fit
           "
         >
           <div className="lg:mr-8">
