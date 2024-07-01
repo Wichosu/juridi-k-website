@@ -1,4 +1,4 @@
-import { createClient } from 'next-sanity'
+import { QueryParams, createClient } from 'next-sanity'
 
 import { apiVersion, dataset, projectId, useCdn } from '../env'
 
@@ -9,3 +9,20 @@ export const client = createClient({
   useCdn,
   perspective: 'published',
 })
+
+export async function sanityFetch<QueryResponse>({
+  query,
+  params = {},
+  tags,
+}: {
+  query: string;
+  params?: QueryParams;
+  tags?: string[];
+}) {
+  return client.fetch<QueryResponse>(query, params, {
+    next: {
+      revalidate: process.env.NOde_ENV === 'development' ? 30 : 3600,
+      tags
+    }
+  });
+}
