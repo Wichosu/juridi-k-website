@@ -51,14 +51,15 @@ export const ServicesBase = ({ t, lng }: Props) => {
           {
             //make proper type for desc (sanity document type service)
             services?.map((desc: any, key) => (
-              <div className="
+              <Link className="
                   uppercase my-3 px-4 py-2 text-xl hover:cursor-pointer bg-darkred
                   lg:w-fit
                 "
                 key={key}
+                href={`/${desc.title}`}
               >
                 {t(desc?.title)}
-              </div>
+              </Link>
             ))
           }
         </div>
