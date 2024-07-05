@@ -56,7 +56,7 @@ export const ServicesBase = ({ t, lng }: Props) => {
                   lg:w-fit
                 "
                 key={key}
-                href={`/${desc.title}`}
+                href={`/${desc?.slug.current}`}
               >
                 {t(desc?.title)}
               </Link>
