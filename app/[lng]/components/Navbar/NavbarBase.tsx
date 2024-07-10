@@ -54,7 +54,9 @@ export const NavbarBase = ({ t, lng }: Props) => {
   return (
     <nav className="bg-darkblue lg:relative">
       <div className="flex justify-between px-8 py-4 capitalize lg:max-w-screen-xl lg:mx-auto lg:relative">
-        <Image src={LogoBig} width={100} height={100} alt="juridi-k logo" className="cursor-pointer" />
+        <Link href={'/'}>
+          <Image src={LogoBig} width={100} height={100} alt="juridi-k logo" className="cursor-pointer" />
+        </Link>
         <Image src={BurgerIcon} width={40} height={40} alt="menu button" className="cursor-pointer lg:hidden" onClick={() => setShowNavbar((val) => !val)}  />
         <aside className={`
             fixed overflow-scroll flex flex-col gap-4 top-0 right-0 w-3/4 h-screen px-8 py-12

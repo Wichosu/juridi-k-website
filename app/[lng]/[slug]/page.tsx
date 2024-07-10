@@ -50,9 +50,6 @@ export default function Page({ params: { lng, slug } }: Props) {
     }
   }, [])
 
-  console.log(slug)
-  console.log(service)
-
   return (
     <Layout lng={lng}>
       {

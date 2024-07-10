@@ -22,7 +22,7 @@ export const FooterBase = ({ t, lng }: Props) => {
             <ul className='flex justify-between'>
               <li className='cursor-pointer scale-75'><Image src={Envelope} width={40} height={40} alt='' /></li>
               <li className='cursor-pointer scale-75'><Image src={Telephone} width={40} height={40} alt='' /></li>
-              <li className='cursor-pointer scale-75'><Image src={Whatsapp} width={40} height={40} alt='' /></li>
+              <li className='cursor-pointer scale-75'><Link href="https://wa.me/5217822143078" target='_blank'><Image src={Whatsapp} width={40} height={40} alt='' /></Link></li>
             </ul>
             <p>JURIDI-K: Helsinki No. 2. Colonia Monte Magno, Xalapa-Veracruz, México. C.P. 91193.</p>
           </div>

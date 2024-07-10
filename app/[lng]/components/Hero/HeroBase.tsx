@@ -15,13 +15,13 @@ export const HeroBase = ({ t, lng }: Props) => {
         <div>
           <h1 className="text-3xl py-4">{ t("title") }</h1>
           <p className="text-sm lg:w-fit lg:max-w-md">{ t("description") }</p>
-          <div className="bg-darkred flex justify-around py-4 my-4 cursor-pointer lg:w-fit lg:px-8">
+          <a className="bg-darkred flex justify-around py-4 my-4 cursor-pointer lg:w-fit lg:px-8" href="https://wa.me/5217822143078" target="_blank">
             <div className="lg:mr-8">
               <p className="text-xs">{ t("button_subheader") }</p>
               <h2 className="text-xl">{ t("button_header") }</h2>
             </div>
             <Image src={RightArrow} width={35} height={35} alt="Make an appointment" />
-          </div>
+          </a>
         </div>
         <Image 
           src={Hero} 
