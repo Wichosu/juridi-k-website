@@ -31,6 +31,6 @@ export default defineConfig({
         {id: 'zh', title: 'Mandarin'},
       ],
       schemaTypes: ['service'],
-    })
+    }),
   ],
 })

@@ -63,7 +63,7 @@ export default function Page({ params: { lng, slug } }: Props) {
             <h2 className='text-4xl font-bold lg:text-center'>Ofrecemos</h2>
             {
               service?.details.map((detail: any, key: number) => (
-                <Accordion name={service?.title} portableText={service?.description} key={key} />
+                <Accordion name={detail?.title} portableText={detail?.description} key={key} />
               ))
             }
           </div>

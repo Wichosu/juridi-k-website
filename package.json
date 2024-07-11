@@ -12,6 +12,7 @@
     "@sanity/document-internationalization": "^3.0.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.48.1",
+    "@superside-oss/sanity-plugin-copy-paste": "^1.0.3",
     "accept-language": "^3.0.18",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
